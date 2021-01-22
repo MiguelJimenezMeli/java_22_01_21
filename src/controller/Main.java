@@ -36,10 +36,26 @@ public class Main {
         System.out.println(l1);
     }
 
+    public static void Ejercicio4() {
+        Fraccion f1 = new Fraccion(3, 4);
+        Fraccion f2 = new Fraccion(2, 7);
+        Fraccion suma = f1.sumar(f2);
+        Fraccion resta = f1.restar(f2);
+        Fraccion prod = f1.multiplicar(f2);
+        Fraccion div = f1.dividir(f2);
+        Fraccion sumaEntero = f1.sumar(8);
+        System.out.println(suma);
+        System.out.println(resta);
+        System.out.println(prod);
+        System.out.println(div);
+        System.out.println(sumaEntero);
+    }
+
     public static void main(String[] args) {
         //Ejercicio1();
         //Ejercicio2();
-        Ejercicio3();
+        //Ejercicio3();
+        Ejercicio4();
 
     }
 }
