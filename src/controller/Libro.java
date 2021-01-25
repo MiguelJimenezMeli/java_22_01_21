@@ -10,17 +10,12 @@ public class Libro {
     public Libro(String titulo, String autor) {
         setTitulo(titulo);
         setAutor(autor);
-        setISBN(nextISBN);
-        nextISBN++;
+        setISBN(nextISBN++);
         setPrestado(false);
     }
 
     public Libro() {
-        setTitulo("Programacion en Java");
-        setISBN(nextISBN);
-        nextISBN++;
-        setAutor("Miguel Mateos");
-        setPrestado(false);
+        this("Programacion en Java", "Miguel Mateos");
     }
 
     public void prestar() {
@@ -71,6 +66,10 @@ public class Libro {
 
     @Override
     public String toString() {
+        return tostring();
+    }
+
+    public String tostring(){
         return getTitulo() + "," + getISBN() + "," + getAutor() + ".";
     }
 }
